@@ -4,6 +4,9 @@ from datetime import datetime
 import pdb
 
 
+@app.route('/pages')
+def pages():
+    return render_template("pages.html")
 
 @app.route('/home')
 def home():
