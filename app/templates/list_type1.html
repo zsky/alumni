@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+{% block style %}
+    <link rel="stylesheet" href="/static/css/simplePagination.css"/>
+    <link rel="stylesheet" href="/static/css/superfish.css" media="screen">
+    <link rel="stylesheet" href="/static/css/list_type1.css">
+{% endblock %}
+{% block content %}
+
+<div id="wrapper">
+    <div id="header">
+        <div class="left_h">
+            <p>欢迎来到中南财经政法大学校友网！</p>
+        </div>
+        <div class="right_h">
+            <a href="">设为首页</a> |
+            <a href="">加入收藏</a> |
+            <a href="">管理员入口</a>
+        </div>
+    </div>
+    <div id="title">
+        <img src="/static/img/title.png"/>
+    </div>
+    <div id="content">
+        <div id="nav">
+            {% include "snippets/nav.html" %}
+        </div>
+
+        <div class="clear"></div>
+        <div id="subnav">
+            {% include "snippets/subnav.html" %}
+        </div>
+        <div id="list_type1">
+            <div class="title"> 
+                <span>news</span><span class="right">cao</span>
+            </div>
+            <div>
+                <ul class="news_link">
+                    <div><img src=""/><li><a href="#"> chaoe coangej ngekgk jdkfee lefol mj </a><span class="link_date">05-13
+                        </span></li>
+                        <p>cao  sssssjfke kfe</p>
+                    </div>
+                    <li><a href="#"> chaoe coangej ngekgk jdkfee lefol mj </a><span class="link_date">05-13</span></li>
+                    <li><a href="#"> chaoe coangej ngekgk jdkfee lefol mj </a><span class="link_date">05-13</span></li>
+                    <li><a href="#"> chaoe coangej ngekgk jdkfee lefol mj </a><span class="link_date">05-13</span></li>
+                    <li><a href="#"> chaoe coangej ngekgk jdkfee lefol mj </a><span class="link_date">05-13</span></li>
+                    <li><a href="#"> chaoe coangej ngekgk jdkfee lefol mj </a><span class="link_date">05-13</span></li>
+                    <li><a href="#"> chaoe coangej ngekgk jdkfee lefol mj </a><span class="link_date">05-13</span></li>
+                    <li><a href="#"> chaoe coangej ngekgk jdkfee lefol mj </a><span class="link_date">05-13</span></li>
+
+                    
+       
+                </ul>
+
+            </div>
+             <div id="paging"></div>
+        </div>
+       
+
+        <div class="clear"></div>
+
+    </div>
+    <div id="footer">
+        <p> 电话： 928932992  E-mail: alumni@test.com </p>
+        <p> 地址：湖北武汉中南财经政法大学 </p>
+        <p> 电话： 928932992  E-mail: alumni@test.com </p>
+    </div>
+
+</div>
+
+{% endblock %}
+{% block script %}
+
+<script src="/static/js/hoverIntent.js"></script>
+<script src="/static/js/superfish.js"></script>
+<script src="/static/js/jquery.simplePagination.js"></script>
+
+<script>
+$(function() {
+    $("#paging").pagination({
+        items: 100,
+        itemsOnPage: 10,
+        cssStyle: 'compact-theme',
+        onPageClick: function(num){
+            console.log('page', num);
+            }
+    });
+});
+jQuery(document).ready(function(){
+        jQuery('ul.sf-menu').superfish({
+            autoArrows: false,
+            cssArrows:  false 
+        });
+    });
+</script>
+{% endblock %}
