@@ -1,0 +1,77 @@
+
+
+/*  left area */
+#left_area{
+  margin: -12px 0 0 25px;
+  float: left;
+}
+
+#login{
+    width: 240px;
+    height: 225px;
+    border: 1px solid #cce;
+    text-align: center;
+}
+#login h3{
+    background-color: #99e;
+}
+#login form{
+    padding: 5px;
+    margin: 5px;
+}
+input{
+    border: 1px solid #545;
+    margin: 10px;
+    width: 100px;
+    height: 22px;
+}
+.btn{
+    padding: 7px;
+    margin: 9px;
+}
+
+/* mid area */
+#mid_area{
+    width: 380px;
+    margin: -12px 0 0 25px;
+    float: left;
+}
+.column_title{
+    border-left: 5px solid #00f;
+    border-bottom: 1px solid #ace;
+}
+.column_title h3{
+    display: inline-block;
+    margin-left: 9px;
+    color: blue;
+}
+.column_title a{
+    float: right;
+}
+.link_date{
+    float: right;
+}
+#news2{
+    margin-top: 30px;
+}
+.news_link li{
+    margin: 5px;
+
+}
+
+
+/* right area */
+#right_area{
+    float: right;
+    margin: -12px 25px 0 0;
+}
+#notice{
+    width: 240px;
+    height: 225px;
+    border: 1px solid #cce;
+    text-align: center;
+}
+#notice .title{
+    background-color: #99e;
+}
+

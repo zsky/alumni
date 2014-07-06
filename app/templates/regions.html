@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+{% block style %}
+    <link rel="stylesheet" href="/static/css/jquery-jvectormap-1.2.2.css"
+    media="screen"/>
+    <link rel="stylesheet" href="/static/css/superfish.css" media="screen">
+    <link rel="stylesheet" href="/static/css/list_type1.css">
+{% endblock %}
+{% block content %}
+
+<div id="wrapper">
+    <div id="header">
+        <div class="left_h">
+            <p>欢迎来到中南财经政法大学校友网！</p>
+        </div>
+        <div class="right_h">
+            <a href="">设为首页</a> |
+            <a href="">加入收藏</a> |
+            <a href="">管理员入口</a>
+        </div>
+    </div>
+    <div id="title">
+        <img src="/static/img/title.png"/>
+    </div>
+    <div id="content">
+        <div id="nav">
+            {% include "snippets/nav.html" %}
+        </div>
+
+        <div class="clear"></div>
+        <div id="subnav">
+            {% include "snippets/subnav.html" %}
+        </div>
+        <div id="list_type1">
+            <div class="title"> 
+                <span>news</span><span class="right">cao</span>
+            </div>
+            <div id="map" style="width:600px; height:400px">
+
+            </div>
+        </div>
+       
+
+        <div class="clear"></div>
+
+    </div>
+    <div id="footer">
+        <p> 电话： 928932992  E-mail: alumni@test.com </p>
+        <p> 地址：湖北武汉中南财经政法大学 </p>
+        <p> 电话： 928932992  E-mail: alumni@test.com </p>
+    </div>
+
+</div>
+
+{% endblock %}
+{% block script %}
+
+<script src="/static/js/hoverIntent.js"></script>
+<script src="/static/js/superfish.js"></script>
+
+<script src="/static/js/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+<script src="/static/js/jvectormap/chinaMap.js"></script>
+
+<script>
+$(function(){
+    $('#map').vectorMap({
+            map: 'cn_mill_en',
+            backgroundColor: 'transparent',
+            regionStyle:{
+                initial: {
+                fill: 'yellow',
+                "fill-opacity": 0.3,
+                stroke: 'none',
+                "stroke-width": 0,
+                "stroke-opacity": 1
+                },
+                hover: {
+                fill: '#033',
+                "fill-opacity": 0.8
+                },
+                selected: {
+                fill: 'yellow'
+                },
+                selectedHover: {
+                }
+
+            },
+            onRegionClick: function(e, code){
+                   console.log('region click', e, code);
+               }
+    });
+});
+
+jQuery(document).ready(function(){
+        jQuery('ul.sf-menu').superfish({
+autoArrows: false,
+cssArrows:  false 
+});
+        });
+</script>
+{% endblock %}

@@ -1,0 +1,145 @@
+{% extends "base.html" %}
+{% block style %}
+    <link rel="stylesheet" href="/static/css/nivo-slider.css">
+    <link rel="stylesheet" href="/static/themes/default/default.css">
+    <link rel="stylesheet" href="/static/css/superfish.css" media="screen">
+    <link rel="stylesheet" href="/static/css/home.css">
+{% endblock %}
+{% block content %}
+
+<div id="wrapper">
+    <div id="header">
+        <div class="left_h">
+            <p>欢迎来到中南财经政法大学校友网！</p>
+        </div>
+        <div class="right_h">
+            <a href="">设为首页</a> |
+            <a href="">加入收藏</a> |
+            <a href="">管理员入口</a>
+        </div>
+    </div>
+    <div id="title">
+        <img src="/static/img/title.png"/>
+    </div>
+    <div id="content">
+        <div id="nav">
+            {% include "snippets/nav.html" %}
+        </div>
+
+        <div id="slider_wrapper">
+
+        <div class="slider-wrapper theme-default">
+            <div class="ribbon"></div>
+            <div id="slider" class="nivoSlider">
+                <img src="/static/img/home/nemo.jpg" alt=""/>
+                <a href="http://baidu.com">
+                    <img src="/static/img/home/up.jpg" alt="" />
+                </a>
+                <img src="/static/img/home/toystory.jpg" alt="" />
+                <img src="/static/img/home/walle.jpg" alt="" title=""/>
+            </div>
+        </div>
+
+        </div>
+
+        <div id="left_area">
+            <div id="login">
+                <h3> 校友登陆 </h3>
+                <form action="" method="post">
+                    <label> 账户： </label>
+                    <input type="text" name="account"/><br>
+                    <label> 密码： </label>
+                    <input type="text" name="password"/><br>
+                    <a href="">注册</a>  |
+                    <a href="">忘记密码?</a><br>
+                    <button type="submit" class="btn">登陆</button>
+                </form>
+            </div>
+            <div id="local_link">
+                <div><a href="#"><img src="/static/img/home/01.jpg"/></a></div>
+                <div><a href="#"><img src="/static/img/home/02.jpg"/></a></div>
+                <div><a href="#"><img src="/static/img/home/03.jpg"/></a></div>
+            </div>
+        </div>
+        <div id="mid_area">
+            <div id="news1">
+                <div class="column_title">
+                    <h3> title </h3>
+                    <a href="#"> link&gt; </a>
+                </div>
+                <ul class="news_link">
+                    <li><img src="/static/img/home/iconfont-yousanjiao.png"/><a href="#"> link </a><span class="link_date">05-13</span></li>
+                    <li><img src="/static/img/home/iconfont-yousanjiao.png"/><a href="#"> link </a><span class="link_date">05-13</span></li>
+                    <li><img src="/static/img/home/iconfont-yousanjiao.png"/><a href="#"> link </a><span class="link_date">05-13</span></li>
+                    <li><img src="/static/img/home/iconfont-yousanjiao.png"/><a href="#"> link </a><span class="link_date">05-13</span></li>
+                    <li><img src="/static/img/home/iconfont-yousanjiao.png"/><a href="#"> link </a><span class="link_date">05-13</span></li>
+                    <li><img src="/static/img/home/iconfont-yousanjiao.png"/><a href="#"> link </a><span class="link_date">05-13</span></li>
+       
+                </ul>
+            </div>
+            <div id="news2">
+                <div class="column_title">
+                    <h3> title </h3>
+                    <a href="#"> link&gt; </a>
+                </div>
+                <ul class="news_link">
+                    <li><img src="/static/img/home/iconfont-yousanjiao.png"/><a href="#"> link </a><span class="link_date">05-13</span></li>
+                    <li><img src="/static/img/home/iconfont-yousanjiao.png"/><a href="#"> link </a><span class="link_date">05-13</span></li>
+                    <li><img src="/static/img/home/iconfont-yousanjiao.png"/><a href="#"> link </a><span class="link_date">05-13</span></li>
+                    <li><img src="/static/img/home/iconfont-yousanjiao.png"/><a href="#"> link </a><span class="link_date">05-13</span></li>
+                    <li><img src="/static/img/home/iconfont-yousanjiao.png"/><a href="#"> link </a><span class="link_date">05-13</span></li>
+                    <li><img src="/static/img/home/iconfont-yousanjiao.png"/><a href="#"> link </a><span class="link_date">05-13</span></li>
+       
+                </ul>
+            </div>
+        </div>
+        <div id="right_area">
+            <div id="notice">
+                <div class="title">
+                    <h3> 通知公告 </h3>
+                    <a href="">更多&gt;&gt;</a>
+                </div>
+                <ul>
+                    <li><a href="#"> link </a><span class="link_date">05-13</span></li>
+                    <li><a href="#"> link </a><span class="link_date">05-13</span></li>
+                    <li><a href="#"> link </a><span class="link_date">05-13</span></li>
+                    <li><a href="#"> link </a><span class="link_date">05-13</span></li>
+                </ul>
+            </div>
+            <div id="event">
+                <div><a href="#"><img src="/static/img/home/01.jpg"/></a></div>
+                <div><a href="#"><img src="/static/img/home/02.jpg"/></a></div>
+                <div><a href="#"><img src="/static/img/home/03.jpg"/></a></div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div id="friend_link">
+        </div>
+    </div>
+    <div id="footer">
+        <p> 电话： 928932992  E-mail: alumni@test.com </p>
+        <p> 地址：湖北武汉中南财经政法大学 </p>
+        <p> 电话： 928932992  E-mail: alumni@test.com </p>
+    </div>
+
+</div>
+
+{% endblock %}
+{% block script %}
+<script src="/static/js/jquery.nivo.slider.js"></script>
+
+<script src="/static/js/hoverIntent.js"></script>
+<script src="/static/js/superfish.js"></script>
+
+<script>
+$(window).load(function(){
+        $('#slider').nivoSlider();
+        });
+jQuery(document).ready(function(){
+        jQuery('ul.sf-menu').superfish({
+            autoArrows: false,
+            cssArrows:  false 
+        });
+    });
+</script>
+{% endblock %}

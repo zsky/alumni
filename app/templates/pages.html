@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block style %}
+<style rel="stylesheet">
+.pages{
+    margin-left: 300px;
+}
+.pages p{
+    margin: 5px;
+}
+</style>
+{% endblock %}
+{% block content %}
+<div class="pages">
+    <p><a href="/home">home</a></p>
+    <p><a href="/list_type1">list_type1</a></p>
+    <p><a href="/regions">regions</a></p>
+    <p><a href="/editor">editor</a></p>
+</div>
+{% endblock %}
