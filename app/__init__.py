@@ -1,5 +1,13 @@
+#!/usr/bin/python
+#coding: utf-8
 from flask import Flask
 
-app = Flask(__name__)
+def create_app():
+    app = Flask(__name__)
 
-from app import views
+    return app
+
+
+app = create_app()
+
+
