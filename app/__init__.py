@@ -9,5 +9,6 @@ def create_app():
 
 
 app = create_app()
+from app import views
 
 
