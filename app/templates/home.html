@@ -20,6 +20,11 @@
     </div>
     <div id="title">
         <img src="/static/img/title.png"/>
+        <div class="searchDiv">
+            <img src="/static/img/searchLeft.jpg"/>
+            <input id="searchBox" type="text"/>
+            <img class="searchRight" src="/static/img/searchRight.jpg"/>
+        </div>
     </div>
     <div id="content">
         <div id="nav">
@@ -64,8 +69,8 @@
         <div id="mid_area">
             <div id="news1">
                 <div class="column_title">
-                    <h3> title </h3>
-                    <a href="#"> link&gt; </a>
+                    <h3> 新闻速递 </h3>
+                    <a href="#"> 更多&gt; </a>
                 </div>
                 <ul class="news_link">
                     <li><img src="/static/img/home/iconfont-yousanjiao.png"/><a href="#"> link </a><span class="link_date">05-13</span></li>
@@ -131,9 +136,12 @@
 <script src="/static/js/hoverIntent.js"></script>
 <script src="/static/js/superfish.js"></script>
 
+<script src="/static/js/jquery.corner.js"></script>
+
 <script>
 $(window).load(function(){
         $('#slider').nivoSlider();
+        $('#search').corner();
         });
 jQuery(document).ready(function(){
         jQuery('ul.sf-menu').superfish({

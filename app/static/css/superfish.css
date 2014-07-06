@@ -39,7 +39,7 @@
 }
 .sf-menu ul {
 	box-shadow: 2px 2px 6px rgba(0,0,0,.2);
-	min-width: 12em; /* allow long menu items to determine submenu width */
+	min-width: 8em; /* allow long menu items to determine submenu width */
 	*width: 12em; /* no auto sub width for IE7, see white-space comment below */
 }
 .sf-menu a {
@@ -51,24 +51,24 @@
 	zoom: 1; /* IE7 */
 }
 .sf-menu a {
-	color: #fff;
+	color: #fff;  /*keypoint zitiyanse*/
 }
 .sf-menu li {
-	background: #00f;
+	background: #00f;  /*keypoint default backgroundcolor*/
 	white-space: nowrap; /* no need for Supersubs plugin */
 	*white-space: normal; /* ...unless you support IE7 (let it wrap) */
 	-webkit-transition: background .2s;
 	transition: background .2s;
 }
 .sf-menu ul li {
-	background: #AABDE6;
+	background: #00f;/*keypoint default submenu backgroundcolor*/
 }
 .sf-menu ul ul li {
 	background: #9AAEDB;
 }
 .sf-menu li:hover,
 .sf-menu li.sfHover {
-	background: #CFDEFF;
+	background: #644bb3;/*keypoint hover color*/
 	/* only transition out, not in */
 	-webkit-transition: none;
 	transition: none;
