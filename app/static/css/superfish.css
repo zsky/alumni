@@ -54,14 +54,14 @@
 	color: #fff;  /*keypoint zitiyanse*/
 }
 .sf-menu li {
-	background: #00f;  /*keypoint default backgroundcolor*/
+	background: #0365b1;/*keypoint default backgroundcolor*/
 	white-space: nowrap; /* no need for Supersubs plugin */
 	*white-space: normal; /* ...unless you support IE7 (let it wrap) */
 	-webkit-transition: background .2s;
 	transition: background .2s;
 }
 .sf-menu ul li {
-	background: #00f;/*keypoint default submenu backgroundcolor*/
+	background: #0365b1;/*keypoint default submenu backgroundcolor*/
 }
 .sf-menu ul ul li {
 	background: #9AAEDB;

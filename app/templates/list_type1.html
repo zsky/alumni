@@ -19,6 +19,11 @@
     </div>
     <div id="title">
         <img src="/static/img/title.png"/>
+        <div class="searchDiv">
+            <img src="/static/img/searchLeft.jpg"/>
+            <input id="searchBox" type="text"/>
+            <img class="searchRight" src="/static/img/searchRight.jpg"/>
+        </div>
     </div>
     <div id="content">
         <div id="nav">
@@ -31,23 +36,27 @@
         </div>
         <div id="list_type1">
             <div class="title"> 
-                <span>news</span><span class="right">cao</span>
+                <span class="left">校园新闻</span>
+                <span class="right">当前位置：校园新闻</span>
             </div>
             <div>
                 <ul class="news_link">
-                    <div><img src=""/><li><a href="#"> chaoe coangej ngekgk jdkfee lefol mj </a><span class="link_date">05-13
+                    <div class="first_news">
+                        <div class="news_img"><img src="/static/img/listType/news.jpg"/></div>
+                        <div class="con">
+                        <li><a href="#"> 关于在2014  </a><span class="link_date">05-13
                         </span></li>
-                        <p>cao  sssssjfke kfe</p>
+                        <p>关关关关关于在2014届毕业生选择校友信使于在2014届毕业生选择校友信使于在2014届毕业生选择校友信使于在2014届毕业生选择校友信使于在2014届毕业生选择校友信使关于在2014届毕业生选择校友信使的</p>
+                        </div>
                     </div>
-                    <li><a href="#"> chaoe coangej ngekgk jdkfee lefol mj </a><span class="link_date">05-13</span></li>
-                    <li><a href="#"> chaoe coangej ngekgk jdkfee lefol mj </a><span class="link_date">05-13</span></li>
-                    <li><a href="#"> chaoe coangej ngekgk jdkfee lefol mj </a><span class="link_date">05-13</span></li>
-                    <li><a href="#"> chaoe coangej ngekgk jdkfee lefol mj </a><span class="link_date">05-13</span></li>
-                    <li><a href="#"> chaoe coangej ngekgk jdkfee lefol mj </a><span class="link_date">05-13</span></li>
-                    <li><a href="#"> chaoe coangej ngekgk jdkfee lefol mj </a><span class="link_date">05-13</span></li>
-                    <li><a href="#"> chaoe coangej ngekgk jdkfee lefol mj </a><span class="link_date">05-13</span></li>
-
-                    
+                    <li><a href="#">关于在2014届毕业生选择校友信使的通知 </a><span class="link_date">05-13</span></li>
+                    <li><a href="#">关于在2014届毕业生选择校友信使的通知 </a><span class="link_date">05-13</span></li>
+                    <li><a href="#">关于在2014届毕业生选择校友信使的通知 </a><span class="link_date">05-13</span></li>
+                    <li><a href="#">关于在2014届毕业生选择校友信使的通知 </a><span class="link_date">05-13</span></li>
+                    <li><a href="#">关于在2014届毕业生选择校友信使的通知 </a><span class="link_date">05-13</span></li>
+                    <li><a href="#">关于在2014届毕业生选择校友信使的通知 </a><span class="link_date">05-13</span></li>
+                    <li><a href="#">关于在2014届毕业生选择校友信使的通知 </a><span class="link_date">05-13</span></li>
+                    <li><a href="#">关于在2014届毕业生选择校友信使的通知 </a><span class="link_date">05-13</span></li>
        
                 </ul>
 
@@ -57,12 +66,34 @@
        
 
         <div class="clear"></div>
+        <div id="friend_link">
+        <div class="link"> 友情链接 </div>
+        <select class="select_link" onchange="location = this.options[this.selectedIndex].value;">
+            <option value="">-- 校内部门 --</option>
+            <option value="http://baidu.com">百度</option>
+            <option value="">中南财经政法大学</option>
+            <option value="#">中南财经政法大学</option>
+            <option value="">中南财经政法大学</option>
+        </select>
+        <select class="select_link" onchange="location = this.options[this.selectedIndex].value;">
+            <option value="">-- 校内部门 --</option>
+            <option value="http://baidu.com">百度</option>
+            <option value="">中南财经政法大学</option>
+            <option value="#">中南财经政法大学</option>
+            <option value="">中南财经政法大学</option>
+        </select>
+        <select class="select_link" onchange="location = this.options[this.selectedIndex].value;">
+            <option value="">-- 校内部门 --</option>
+            <option value="http://baidu.com">百度</option>
+            <option value="">中南财经政法大学</option>
+            <option value="#">中南财经政法大学</option>
+            <option value="">中南财经政法大学</option>
+        </select>
+        </div>
 
     </div>
     <div id="footer">
-        <p> 电话： 928932992  E-mail: alumni@test.com </p>
-        <p> 地址：湖北武汉中南财经政法大学 </p>
-        <p> 电话： 928932992  E-mail: alumni@test.com </p>
+        {% include "snippets/footer.html" %}
     </div>
 
 </div>

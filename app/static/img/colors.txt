@@ -1,0 +1,7 @@
+主蓝色： 0471d0
+title次蓝色： 0085ec
+subnav主色  cfe4f8
+footer：蓝色 0365b1
+主背景色： 浅色 eff4f6
+中国地图： 深色f8f981
+中国地图 浅色： f8fbcc

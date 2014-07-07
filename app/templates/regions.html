@@ -32,9 +32,14 @@
         </div>
         <div id="list_type1">
             <div class="title"> 
-                <span>news</span><span class="right">cao</span>
+                <span class="left">校园新闻</span>
+                <span class="right">当前位置：校园新闻</span>
             </div>
-            <div id="map" style="width:600px; height:400px">
+            <div class="map_header">
+                <h3> 各地分会</h3>
+                <p>发布日期： 2014-2-2</p>
+            </div>
+            <div id="map" style="width:560px; height:400px">
 
             </div>
         </div>
@@ -44,9 +49,7 @@
 
     </div>
     <div id="footer">
-        <p> 电话： 928932992  E-mail: alumni@test.com </p>
-        <p> 地址：湖北武汉中南财经政法大学 </p>
-        <p> 电话： 928932992  E-mail: alumni@test.com </p>
+        {% include "snippets/footer.html" %}
     </div>
 
 </div>
@@ -65,16 +68,17 @@ $(function(){
     $('#map').vectorMap({
             map: 'cn_mill_en',
             backgroundColor: 'transparent',
+            zoomMax: 1.8,
             regionStyle:{
                 initial: {
-                fill: 'yellow',
+                fill: 'f8fbcc',
                 "fill-opacity": 0.3,
                 stroke: 'none',
                 "stroke-width": 0,
                 "stroke-opacity": 1
                 },
                 hover: {
-                fill: '#033',
+                fill: '#f8f981',
                 "fill-opacity": 0.8
                 },
                 selected: {

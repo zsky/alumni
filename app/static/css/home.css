@@ -29,9 +29,14 @@ input{
     width: 120px;
     height: 22px;
 }
-.btn{
-    padding: 7px 12px;
-    margin: 9px;
+#login .btn{
+    /*padding: 7px 12px;
+    margin: 9px;*/
+    background: url('../img/home/loginBtn.jpg');
+    width: 91px;
+    height: 32px;
+    margin-top: 9px;
+    outline: none;
 }
 
 /* mid area */
@@ -59,8 +64,15 @@ input{
     margin-top: 30px;
 }
 .news_link li{
-    margin: 5px;
-
+    margin: 9px;
+    background: url("../img/home/iconfont-yousanjiao.png") no-repeat left center;
+    padding-left: 22px;
+    font-size: 16px;
+    line-height: 18px;
+}
+.news_link a{
+    color: #463F3F;
+    /* font-weight: 700; */
 }
 
 
@@ -68,15 +80,49 @@ input{
 #right_area{
     float: right;
     margin: -12px 25px 12px 0;
+    border-bottom: 1px solid #cce;
+
 }
 #notice{
     width: 240px;
     height: 225px;
     border: 1px solid #cce;
-    text-align: center;
     margin-bottom: 25px;
 }
 #notice .title{
-    background-color: #99e;
+    background-color: #E4E4FA;
+    border-bottom: 1px solid #cce;
+    padding: 10px;
+    color: #00f;
+    text-align: center;
+}
+#notice h3{
+    display: inline-block;
+}
+#notice .more{
+    display: inline-block;
+    position: relative;
+    left: 45px;
+    top: 8px;
+    /* right: 29px; */
 }
 
+/* friend link */
+#friend_link{
+    height: 26px;
+    background: #ace;
+    padding-top: 6px;
+}
+#friend_link .link{
+    display: inline-block;
+    margin-left: 65px;
+    padding-left: 33px;
+    background: url("../img/home/iconfont-link.png") no-repeat left center;
+}
+.select_link{
+    display: inline-block;
+    width: 145px;
+    margin-left: 63px;
+    height: 21px;
+    background-color: #F0FAFA;
+}

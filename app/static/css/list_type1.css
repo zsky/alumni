@@ -1,17 +1,19 @@
 /* subnav */
 #subnav{
-    width: 300px;
+    width: 260px;
     height: 700px;
     margin: 22px 0 18px 25px;
     float: left;
-    background-color: #9292f3;
+    background-color: #c9e2f8;
+    border: 1px solid #cce;
 }
 #subnav .title{
     height: 32px;
     background-color: blue;
     color: white;
     padding-left: 22px;
-    font-size: 22px;
+    padding-top: 5px;
+    font-size: 20px;
 }
 #subnav .computer{
     width: 25px;
@@ -22,29 +24,65 @@
     text-align: center;
     
     height: 25px;
-    padding: 5px;
+    padding: 7px;
     font-size: 22px;
     border-bottom: 1px solid #646437;
     width: 240px;
-    margin: 0 auto;
+    margin: 12px auto;
+    /* color: #000; */
+}
+#subnav .item a{
+    color: #000;
+}
+#subnav .item a.current{
+    color: #B42626;
 }
 
 /* list_type1 */
 #list_type1{
-    width: 600px;
+    width: 620px;
     height: 700px;
     float: right;
     margin: 22px 25px 18px 0;
+    border: 1px solid #cce;
 }
 #list_type1 .title{
     height: 32px;
     background-color: blue;
     color: white;
-    padding-left: 22px;
-    font-size: 22px;
+    padding-left: 8px;
+    padding-top: 5px;
+    font-size: 19px;
+}
+#list_type1 .left{
+    background: url('../img/listType/iconfont-xinwen.png') no-repeat left center;
+    padding-left: 42px;
 }
 #list_type1 .right{
     float: right;
+    padding-right: 12px;
+    font-size: 17px;
+    margin-top: 5px;
+}
+.first_news img{
+    width: 150px;
+    height: 90px;
+}
+.first_news .news_img{
+    display: inline-block;
+}
+.first_news{
+padding-left: 25px;
+padding-top: 0;
+/* padding-right: 15px; */
+margin: 9px 0px;
+}
+.first_news .con{
+    display: inline-block;
+    /* margin-top: -59px; */
+    margin-left: 33px;
+    width: 390px;
+    font-size: 14px;
 }
 .news_link li{
     background: url(../img/listType/iconfont-fangkuai.png) no-repeat 0px center;
@@ -52,7 +90,54 @@
     padding-right: 15px;
     line-height: 28px;
     font-size: 19px;
+    margin: 9px
+    
+}
+.news_link a{
+    color: #000;
 }
 .link_date{
     float: right;
+}
+
+/* paging */
+#paging{
+    position: absolute;
+    left: 540px;
+    top: 945px;
+}
+/* china map */
+.map_header{
+    height: 70px;
+    width: 550px;
+    border-bottom: 1px solid #00f;
+    margin: 2px auto;
+    text-align: center;
+    padding: 9px;
+}
+.map_header h3{
+    margin:12px;
+    color: #00f;
+}
+#map{
+    margin: 22px auto;
+}
+/* friend link */
+#friend_link{
+    height: 26px;
+    background: #ace;
+    padding-top: 6px;
+}
+#friend_link .link{
+    display: inline-block;
+    margin-left: 65px;
+    padding-left: 33px;
+    background: url("../img/home/iconfont-link.png") no-repeat left center;
+}
+.select_link{
+    display: inline-block;
+    width: 145px;
+    margin-left: 63px;
+    height: 21px;
+    background-color: #F0FAFA;
 }
